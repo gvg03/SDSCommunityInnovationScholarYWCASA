@@ -1,12 +1,8 @@
 
-"""
-HRSA Page SETUP
-"""
+#home age setup
 
 
-"""
-    Streamlit working on web 
-"""
+# Imports
 
 import streamlit as st # importing streamlit
 import pandas as pd    # panda
@@ -15,18 +11,14 @@ import plotly.express as px # for interactive zip code
 import json            # to load file, for zipcode
 import streamlit.components.v1 as components   # to bring in PowerBi
 
-"""
-    Page Setup, layout and title
-"""
+# Page Setup, layout and title
+
 st.set_page_config(layout="wide")
 st.title("YWCA & UTSA SDS Innovation Scholars")
-
-"""
-    
-"""  
+ 
 program = st.selectbox("Select a Program to View Summary Stats:", ["HRSA", "RESET", "RTW"])
 
-# Placeholder stats — replace with your actual data
+# placeholder to test
 if program == "HRSA":
     st.metric("Total Participants", 111)
     st.metric("Employed Participants", 30)
