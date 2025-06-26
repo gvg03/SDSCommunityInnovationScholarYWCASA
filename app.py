@@ -10,6 +10,7 @@ HRSA Page SETUP
 
 import streamlit as st # importing streamlit
 import pandas as pd    # panda
+import plotly
 import plotly.express as px # for interactive zip code
 import json            # to load file, for zipcode
 import streamlit.components.v1 as components   # to bring in PowerBi
