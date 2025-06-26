@@ -1,0 +1,41 @@
+
+"""
+HRSA Page SETUP
+"""
+
+
+"""
+    Streamlit working on web 
+"""
+
+import streamlit as st # importing streamlit
+import pandas as pd    # panda
+import plotly.express as px # for interactive zip code
+import json            # to load file, for zipcode
+import streamlit.components.v1 as components   # to bring in PowerBi
+
+"""
+    Page Setup, layout and title
+"""
+st.set_page_config(layout="wide")
+st.title("YWCA & UTSA SDS Innovation Scholars")
+
+"""
+    
+"""  
+program = st.selectbox("Select a Program to View Summary Stats:", ["HRSA", "RESET", "RTW"])
+
+# Placeholder stats — replace with your actual data
+if program == "HRSA":
+    st.metric("Total Participants", 111)
+    st.metric("Employed Participants", 30)
+
+elif program == "RESET":
+    st.metric("Total Participants", 85)
+    st.metric("Employed Participants", 40)
+
+elif program == "RTW":
+    st.metric("Total Participants", 401)
+    st.metric("Employed Participants", 100)
+
+st.write( "Navigate to sidebar to view full dashboards and maps for each program") 
