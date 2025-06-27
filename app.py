@@ -19,15 +19,15 @@ st.title("YWCA & UTSA SDS Innovation Scholars")
 program_type = st.sidebar.selectbox("Select a Program:", ["HRSA", "RESET", "RTW"])
 
 # placeholder to test
-if program == "HRSA":
+if program_type == "HRSA":
     st.metric("Total Participants", 111)
     st.metric("Employed Participants", 30)
 
-elif program == "RESET":
+elif program_type == "RESET":
     st.metric("Total Participants", 85)
     st.metric("Employed Participants", 40)
 
-elif program == "RTW":
+elif program_type == "RTW":
     st.metric("Total Participants", 401)
     st.metric("Employed Participants", 100)
  
