@@ -1,0 +1,17 @@
+
+/* Main app background */
+.stApp {
+    background-color: #ffffff; /* white background */
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: rgba(255, 255, 255, 0.7); /* transparent white */
+    backdrop-filter: blur(10px); /* soft blur behind sidebar */
+    border-right: 1px solid #e0e0e0; /* optional subtle border */
+}
+
+/* idebar shadow */
+section[data-testid="stSidebar"] > div:first-child {
+    box-shadow: none;
+}
