@@ -1,17 +1,18 @@
-
-/* Main app background */
+/* Main app background and text color */
 .stApp {
-    background-color: #ff6600; /* white background */
+    background-color: #ffffff; /* white background */
+    color: black;              /* black text */
 }
 
 /* Sidebar styling */
 section[data-testid="stSidebar"] {
     background-color: rgba(255, 255, 255, 0.7); /* transparent white */
     backdrop-filter: blur(10px); /* soft blur behind sidebar */
-    border-right: 1px solid #e0e0e0; /* optional subtle border */
+    border-right: 1px solid #e0e0e0; /* subtle border */
+    color: black; /* sidebar text black */
 }
 
-/* idebar shadow */
+/* Sidebar shadow */
 section[data-testid="stSidebar"] > div:first-child {
     box-shadow: none;
 }
