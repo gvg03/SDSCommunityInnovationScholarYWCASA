@@ -17,29 +17,39 @@ section[data-testid="stSidebar"] > div:first-child {
     box-shadow: none;
 }
 
-/* Button sidebar */
-/* Streamlit buttons - white background, black text & border */
-.stButton > button {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    border-radius: 6px;
-    padding: 8px 18px;
-    font-weight: 600;
-    font-size: 14px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: none;
+/* Sidebar background & text */
+section[data-testid="stSidebar"] {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px);
+    border-right: 1px solid #e0e0e0;
+    color: black !important;
 }
 
-/* Hover effect: invert colors */
-.stButton > button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
+/* Sidebar radio buttons and selectboxes container */
+div[data-baseweb="radio"] > div {
+    background-color: transparent !important;
+    color: black !important;
 }
 
-/* Focus outline */
-.stButton > button:focus {
-    outline: 2px solid #555555;
-    outline-offset: 2px;
+/* Sidebar radio button labels */
+div[data-baseweb="radio"] label {
+    color: black !important;
+}
+
+/* Sidebar selectbox dropdown */
+div[data-baseweb="select"] {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+/* Sidebar selectbox options */
+div[data-baseweb="select"] div[role="option"] {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* When hovering over options */
+div[data-baseweb="select"] div[role="option"]:hover {
+    background-color: #ddd !important;
+    color: black !important;
 }
