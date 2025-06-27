@@ -60,12 +60,10 @@ if page == "Home":
 # DASHBOARD
 ###############################################################################
 elif page == "Dashboard":
-    st.title("Dashboard")
-
     if program == "-- Select a Program --":
         st.warning("Please select a program from the sidebar to view the dashboard.")
     else:
-        st.title(f"{program} – Dashboard Overview")
+        st.title(f"{program} {page} and Overview")
 
         # Overview Ex
         if program == "HRSA":
