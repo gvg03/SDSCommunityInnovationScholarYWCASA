@@ -16,7 +16,7 @@ import streamlit.components.v1 as components   # to bring in PowerBi
 st.set_page_config(layout="wide")
 st.title("YWCA & UTSA SDS Innovation Scholars")
  
-program = st.selectbox("Select a Program to View Summary Stats:", ["HRSA", "RESET", "RTW"])
+program = st.selectbox("Select a Program:", ["HRSA", "RESET", "RTW"])
 
 # placeholder to test
 if program == "HRSA":
