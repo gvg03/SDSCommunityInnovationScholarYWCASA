@@ -1,7 +1,6 @@
 ###############################################################################
 # HOME PAGE SETUP
 
-
 # Imports
 import streamlit as st
 import pandas as pd
@@ -11,11 +10,10 @@ import streamlit.components.v1 as components
 
 # Power Bi URLS
 pwrbi_url = {
-   # "HRSA": "",
-   # "RESET": "",
+    # "HRSA": "",
+    # "RESET": "",
     "RTW": "https://app.powerbi.com/view?r=eyJrIjoiN2U0MzU0OTQtZDAxNi00YzY4LWE2ZGUtM2ZkNzBiMjY2MDY0IiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
 }
-
 
 # Page configuration 
 st.set_page_config(layout="wide")
@@ -33,9 +31,7 @@ if page != "Home":
 else:
     program = None  # not needed on Home
 
-
 # HOME  (landing page)
-
 if page == "Home":
     # logos side-by-side
     col1, col2 = st.columns([1, 1])
@@ -63,7 +59,6 @@ if page == "Home":
 
 # DASHBOARD
 ###############################################################################
-
 elif page == "Dashboard":
     st.title("Dashboard")
 
@@ -73,40 +68,37 @@ elif page == "Dashboard":
         st.title(f"{program} – Dashboard Overview")
 
         # Overview Ex
-       if program == "HRSA":
-          st.metric("Total Participants", 100)
-          st.metric("Employed Participants", 20)
-          st.subheader("About HRSA")
-          st.write("meh")
+        if program == "HRSA":
+            st.metric("Total Participants", 100)
+            st.metric("Employed Participants", 20)
+            st.subheader("About HRSA")
+            st.write("meh")
 
-       elif program == "RESET":
-          st.metric("Total Participants", 200)
-          st.metric("Employed Participants", 40)
-          st.subheader("About RESET")
-          st.write("meh.")
+        elif program == "RESET":
+            st.metric("Total Participants", 200)
+            st.metric("Employed Participants", 40)
+            st.subheader("About RESET")
+            st.write("meh.")
 
         elif program == "RTW":
-           st.metric("Total Participants", 401)
-           st.metric("Employed Participants", 50)
-           st.subheader("About Ready to Work ")
-           st.write(
+            st.metric("Total Participants", 401)
+            st.metric("Employed Participants", 50)
+            st.subheader("About Ready to Work ")
+            st.write(
                 "Ready to Work is San Antonio’s premier training, education, and "
                 "employment program. It meets people where they are and helps "
                 "them build skills for higher-paying jobs."
             )
 
-            # Embed Power BI 
-            if program in pwrbi_url and pwrbi_url[program]:
-                st.subheader("Interactive Power BI Dashboard")
-                components.iframe(pwrbi_url, height=900, width=1600)
-            else:
-                st.info("WIP")
-        # ----------------------------------------------------------------------
-
+        # Embed Power BI 
+        if program in pwrbi_url and pwrbi_url[program]:
+            st.subheader("Interactive Power BI Dashboard")
+            components.iframe(pwrbi_url[program], height=900, width=1600)
+        else:
+            st.info("WIP")
 
 # MAP
 ###############################################################################
-
 elif page == "Map":
     st.title("Map")
 
