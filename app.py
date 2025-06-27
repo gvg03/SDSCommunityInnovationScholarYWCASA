@@ -30,5 +30,7 @@ elif program == "RESET":
 elif program == "RTW":
     st.metric("Total Participants", 401)
     st.metric("Employed Participants", 100)
+ 
+program_type = st.sidebar.selectbox("Select a Program to View Summary Stats:", ["HRSA", "RESET", "RTW"])
 
-st.write( "Navigate to sidebar to view full dashboards and maps for each program") 
+
