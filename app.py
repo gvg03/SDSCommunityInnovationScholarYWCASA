@@ -74,29 +74,29 @@ elif page == "Dashboard":
 
         # Overview Ex
        if program == "HRSA":
-            st.metric("Total Participants", 100)
-            st.metric("Employed Participants", 20)
-            st.subheader("About HRSA")
-            st.write("meh")
+          st.metric("Total Participants", 100)
+          st.metric("Employed Participants", 20)
+          st.subheader("About HRSA")
+          st.write("meh")
 
-        elif program == "RESET":
-            st.metric("Total Participants", 200)
-            st.metric("Employed Participants", 40)
-            st.subheader("About RESET")
-            st.write("meh.")
+       elif program == "RESET":
+          st.metric("Total Participants", 200)
+          st.metric("Employed Participants", 40)
+          st.subheader("About RESET")
+          st.write("meh.")
 
         elif program == "RTW":
-            st.metric("Total Participants", 401)
-            st.metric("Employed Participants", 50)
-            st.subheader("About Ready to Work ")
-            st.write(
+           st.metric("Total Participants", 401)
+           st.metric("Employed Participants", 50)
+           st.subheader("About Ready to Work ")
+           st.write(
                 "Ready to Work is San Antonio’s premier training, education, and "
                 "employment program. It meets people where they are and helps "
                 "them build skills for higher-paying jobs."
             )
 
             # Embed Power BI 
-            if program in pwrbi_url:
+            if program in pwrbi_url and pwrbi_url[program]:
                 st.subheader("Interactive Power BI Dashboard")
                 components.iframe(pwrbi_url, height=900, width=1600)
             else:
