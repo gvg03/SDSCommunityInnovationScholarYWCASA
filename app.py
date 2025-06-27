@@ -12,10 +12,6 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide")
 # Page color etc
 
-# Load external CSS
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 # Sidebar Navigation
 st.sidebar.title("Program Explorer")
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Map"])
