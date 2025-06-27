@@ -63,7 +63,7 @@ elif page == "Dashboard":
     if program == "-- Select a Program --":
         st.warning("Please select a program from the sidebar to view the dashboard.")
     else:
-        st.title(f"{program} {page} and Overview")
+        st.title(f"{program} Program Overview and {page}")
 
         # Overview Ex
         if program == "HRSA":
