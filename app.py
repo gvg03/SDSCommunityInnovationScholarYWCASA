@@ -10,7 +10,7 @@ import streamlit.components.v1 as components   # to bring in PowerBi
 
 # Page Setup, layout and title
 st.set_page_config(layout="wide")
-st.title("YWCA & UTSA SDS Innovation Scholars")
+st.title("f{program}")
 
 # Sidebar: Navigate + Prog Filter
 st.sidebar.title("Program Explorer")
@@ -24,28 +24,30 @@ if page == "Home":
 
     # HRSA Page
     if program == "HRSA":
+        st.title("HRSA")
         st.metric("Total Participants", 100)
         st.metric("Employed Participants", 20)
 
-        st.subheader("About the HRSA Program")
-        st.write("BIO BLANK.")
+        st.subheader("About")
+        st.write("meh meh")
 
     # RESET Page
     elif program == "RESET":
+        st.title("RESET")
         st.metric("Total Participants", 200)
         st.metric("Employed Participants", 40)
 
-        st.subheader("About the RESET Program")
-        st.write("BIO BLANK.")
+        st.subheader("About")
+        st.write("me me me")
 
     # RTW Page
     elif program == "RTW":
         st.metric("Total Participants", 401)
         st.metric("Employed Participants", 50)
 
-        st.subheader("About the RTW Program")
-        st.write("BIO BLANK.")
-
+        st.subheader("About")
+        st.write("Ready to Work is San Antonio’s premier training, education, and employment program.​\n"  
+        "Ready to Work will meet you where you are and take you to the next level with skills for higher-paying jobs.")
 
 
 
