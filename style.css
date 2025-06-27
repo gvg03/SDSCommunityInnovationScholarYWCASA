@@ -16,3 +16,30 @@ section[data-testid="stSidebar"] {
 section[data-testid="stSidebar"] > div:first-child {
     box-shadow: none;
 }
+
+/* Button sidebar */
+/* Streamlit buttons - white background, black text & border */
+.stButton > button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: none;
+}
+
+/* Hover effect: invert colors */
+.stButton > button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Focus outline */
+.stButton > button:focus {
+    outline: 2px solid #555555;
+    outline-offset: 2px;
+}
