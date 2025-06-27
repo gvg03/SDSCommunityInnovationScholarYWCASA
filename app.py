@@ -22,7 +22,7 @@ rtw_url = "https://app.powerbi.com/onedrive/open?pbi_source=ODSPViewer&driveId=b
 
 if page == "Dashboard" and program == "RTW":
     st.title("RTW Dashboard")
-    components.iframe(rtw_powerbi_url, height=900, width=1600)
+    components.iframe(rtw_url, height=900, width=1600)
     
 
 ########################### later can store all urls for pwr bi as a dic
