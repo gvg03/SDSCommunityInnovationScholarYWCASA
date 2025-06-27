@@ -15,11 +15,10 @@ st.set_page_config(layout="wide")
 # Sidebar Navigation
 st.sidebar.title("Program Explorer")
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Map"])
-program = st.sidebar.selectbox("Select Program:", ["-- Select a Program --", "HRSA", "RESET", "RTW"])
 
-# Landing Page
-if program == "-- Select a Program --":
-    # creating columns for pics
+# Landing Page (Home - mainwelcome)
+if page == "Home":
+    # Creating columns for logos
     col1, col2 = st.columns([1, 1])
 
     with col1:
@@ -45,44 +44,5 @@ if program == "-- Select a Program --":
     )
     st.divider()
 
-# Program Content Pages
-else:
-    if page == "Home":
-        st.title(f"{program} - Program Overview")
 
-        if program == "HRSA":
-            st.metric("Total Participants", 100)
-            st.metric("Employed Participants", 20)
-            st.subheader("About")
-            st.write("meh meh")
 
-        elif program == "RESET":
-            st.metric("Total Participants", 200)
-            st.metric("Employed Participants", 40)
-            st.subheader("About")
-            st.write("me me me")
-
-        elif program == "RTW":
-            st.metric("Total Participants", 401)
-            st.metric("Employed Participants", 50)
-            st.subheader("About")
-            st.write("""
-            Ready to Work is San Antonio’s premier training, education, and employment program.  
-            Ready to Work will meet you where you are and take you to the next level with skills for higher-paying jobs.
-            """)
-
-    elif page == "Dashboard":
-        st.title(f"{program} Dashboard")
-
-        if program == "RTW":
-            # looking into powerbi integration
-            # 1st assigning url to variable
-            rtw_url = "https://app.powerbi.com/view?r=eyJrIjoiN2U0MzU0OTQtZDAxNi00YzY4LWE2ZGUtM2ZkNzBiMjY2MDY0IiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
-            st.subheader("Interactive Power BI Dashboard")
-            components.iframe(rtw_url, height=900, width=1600)
-        else:
-            st.info("WIP")
-
-    elif page == "Map":
-        st.title(f"{program} - ZIP Interactive")
-        st.info("Map")
