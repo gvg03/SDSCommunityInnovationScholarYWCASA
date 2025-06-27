@@ -10,17 +10,14 @@ import streamlit.components.v1 as components   # to bring in PowerBi
 
 # Page Setup, layout and title
 st.set_page_config(layout="wide")
-st.title("f{program}")
 
 # Sidebar: Navigate + Prog Filter
 st.sidebar.title("Program Explorer")
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Map"])
-
 program = st.sidebar.selectbox("Select Program:", ["HRSA", "RESET", "RTW"])
 
 # HOME page landing
 if page == "Home":
-    st.title("YWCA & UTSA SDS Community Innovation Scholars")
 
     # HRSA Page
     if program == "HRSA":
