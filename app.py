@@ -16,6 +16,30 @@ st.sidebar.title("Program Explorer")
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Map"])
 program = st.sidebar.selectbox("Select Program:", ["HRSA", "RESET", "RTW"])
 
+#looking into powerbi integration
+# 1st assigning url to variable
+rtw_url = "https://app.powerbi.com/onedrive/open?pbi_source=ODSPViewer&driveId=b!8Iv-TZJnbE-jQI9PDsBIVpbpL2rVgNFHgmSPuf_pk-E9UaqGd05wQIj4gvaYQ56G&itemId=01S32MYROROB7FVF5Z5NDJIQ77UZETJPMS"
+
+if page == "Dashboard" and program == "RTW":
+    st.title("RTW Dashboard")
+    components.iframe(rtw_powerbi_url, height=900, width=1600)
+    
+
+########################### later can store all urls for pwr bi as a dic
+#powerbi_urls = {
+   # "HRSA": "https://app.powerbi.com/view?r=longlinkHRSA...",
+   # "RESET": "https://app.powerbi.com/view?r=longlinkRESET...",
+    #"RTW": "https://app.powerbi.com/view?r=veryLongLinkRTW..."
+#}
+
+#if page == "Dashboard":
+    #st.title(f"{program} Dashboard")
+   # components.iframe(powerbi_urls[program], height=900, width=1600)
+
+
+
+
+
 # HOME page landing
 if page == "Home":
 
