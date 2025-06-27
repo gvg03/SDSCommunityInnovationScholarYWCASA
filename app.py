@@ -18,7 +18,7 @@ program = st.sidebar.selectbox("Select Program:", ["HRSA", "RESET", "RTW"])
 
 #looking into powerbi integration
 # 1st assigning url to variable
-rtw_url = "https://app.powerbi.com/onedrive/open?pbi_source=ODSPViewer&driveId=b!8Iv-TZJnbE-jQI9PDsBIVpbpL2rVgNFHgmSPuf_pk-E9UaqGd05wQIj4gvaYQ56G&itemId=01S32MYROROB7FVF5Z5NDJIQ77UZETJPMS"
+rtw_url = "https://app.powerbi.com/view?r=eyJrIjoiN2U0MzU0OTQtZDAxNi00YzY4LWE2ZGUtM2ZkNzBiMjY2MDY0IiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
 
 if page == "Dashboard" and program == "RTW":
     st.title("RTW Dashboard")
