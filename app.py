@@ -9,6 +9,14 @@ import plotly.express as px
 import json
 import streamlit.components.v1 as components
 
+# Power Bi URLS
+pwrbi_url = {
+   # "HRSA": "",
+   # "RESET": "",
+    "RTW": "https://app.powerbi.com/view?r=eyJrIjoiN2U0MzU0OTQtZDAxNi00YzY4LWE2ZGUtM2ZkNzBiMjY2MDY0IiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
+}
+
+
 # Page configuration 
 st.set_page_config(layout="wide")
 
@@ -87,13 +95,11 @@ elif page == "Dashboard":
             )
 
             # Embed Power BI 
-            rtw_url = (
-                "https://app.powerbi.com/view?"
-                "r=eyJrIjoiN2U0MzU0OTQtZDAxNi00YzY4LWE2ZGUtM2ZkNzBiMjY2MDY0IiwidCI6"
-                "IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
-            )
-            st.subheader("Interactive Power BI Dashboard")
-            components.iframe(rtw_url, height=900, width=1600)
+            if program in pwrbi_url:
+                st.subheader("Interactive Power BI Dashboard")
+                components.iframe(pwrbi_url, height=900, width=1600)
+            else:
+                st.info("WIP")
         # ----------------------------------------------------------------------
 
 
