@@ -113,7 +113,7 @@ elif page == "Map":
         st.warning("Please select a program from the sidebar to view the map.")
     else:
         st.title(f"{program} – ZIP Interactive Map")
-        st.info("WIP "")
+        st.info("WIP")
 
 # End
 
