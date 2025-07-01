@@ -89,6 +89,17 @@ elif page == "Map":
         elif program == "RTW":
             rtw_map()
 
+st.markdown("---")
+st.caption("Built by Community Innovation Scholars – YWCA x UTSA SDS")
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # End
 
 
