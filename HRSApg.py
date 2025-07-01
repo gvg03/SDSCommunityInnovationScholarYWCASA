@@ -9,7 +9,14 @@ Created on Thu Jun 26 18:00:26 2025
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(layout="wide")
-st.title("Dashboard for HRSA")
+def hrsa_dashboard():
+    st.metric("Total Participants", 23)
+    st.metric("Employed Participants", 50)
+    st.subheader("About Ready to Work")
+    st.write(
+        " meh"
+    )
 
-
+    rtw_url = ""
+    st.subheader("Power BI Dashboard")
+    components.iframe(rtw_url, height=900, width=1600)
