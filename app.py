@@ -89,8 +89,6 @@ elif page == "Map":
         elif program == "RTW":
             rtw_map()
 
-st.markdown("---")
-st.caption("Built by Community Innovation Scholars – YWCA x UTSA SDS")
 
 hide_st_style = """
             <style>
