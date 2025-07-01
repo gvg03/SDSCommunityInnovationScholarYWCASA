@@ -1,6 +1,5 @@
 ###############################################################################
 # HOME PAGE SETUP
-
 # Imports
 import streamlit as st
 import pandas as pd
@@ -8,12 +7,11 @@ import plotly.express as px
 import json
 import streamlit.components.v1 as components
 
-# Power Bi URLS
-pwrbi_url = {
-    # "HRSA": "",
-    # "RESET": "",
-    "RTW": "https://app.powerbi.com/view?r=eyJrIjoiN2U0MzU0OTQtZDAxNi00YzY4LWE2ZGUtM2ZkNzBiMjY2MDY0IiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
-}
+# Imports and Function calls
+from pages.RTWpg import rtw_dashboard, rtw_map
+from pages.RESETpg import reset_dashboard, reset_map
+from pages.HRSApg import hrsa_dashboard, hrsa_map
+
 
 # Page configuration 
 st.set_page_config(layout="wide")
@@ -60,51 +58,36 @@ if page == "Home":
 # DASHBOARD
 ###############################################################################
 elif page == "Dashboard":
-    if program == "-- Select a Program --":
+    if program == "-- Select a Program --" or program is None:
         st.warning("Please select a program from the sidebar to view the dashboard.")
     else:
         st.title(f"{program} Program Overview and {page}")
 
-        # Overview Ex
+        # Calling separte dashboard imports from py files
         if program == "HRSA":
-            st.metric("Total Participants", 100)
-            st.metric("Employed Participants", 20)
-            st.subheader("About HRSA")
-            st.write("meh")
-
+            hrsa_dashboard()
         elif program == "RESET":
-            st.metric("Total Participants", 200)
-            st.metric("Employed Participants", 40)
-            st.subheader("About RESET")
-            st.write("meh.")
-
+            reset_dashboard()
         elif program == "RTW":
-            st.metric("Total Participants", 401)
-            st.metric("Employed Participants", 50)
-            st.subheader("About Ready to Work ")
-            st.write(
-                "Ready to Work is San Antonio’s premier training, education, and "
-                "employment program. It meets people where they are and helps "
-                "them build skills for higher-paying jobs."
-            )
+            rtw_dashboard()
 
-        # Embed Power BI 
-        if program in pwrbi_url and pwrbi_url[program]:
-            st.subheader("Interactive Power BI Dashboard")
-            components.iframe(pwrbi_url[program], height=900, width=1600)
-        else:
-            st.info("WIP")
 
 # MAP
 ###############################################################################
 elif page == "Map":
     st.title("Map")
 
-    if program == "-- Select a Program --":
+    if program == "-- Select a Program --" or program is None:
         st.warning("Please select a program from the sidebar to view the map.")
     else:
         st.title(f"{program} – ZIP Interactive Map")
-        st.info("WIP")
+
+        if program == "HRSA":
+            hrsa_map()
+        elif program == "RESET":
+            reset_map()
+        elif program == "RTW":
+            rtw_map()
 
 # End
 
