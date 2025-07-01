@@ -19,7 +19,7 @@ def rtw_dashboard():
         "them build skills for higher-paying jobs."
     )
 
-    rtw_url = "blank"
+    rtw_url = "https://youtu.be/NJuSStkIZBg?si=1GRHJVZTOF7rHGJK"
     st.subheader("Power BI Dashboard")
     components.iframe(rtw_url, height=900, width=1600)
 
