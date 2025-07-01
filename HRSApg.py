@@ -17,6 +17,6 @@ def hrsa_dashboard():
         " meh"
     )
 
-    rtw_url = ""
+    hrsa_url = ""
     st.subheader("Power BI Dashboard")
     components.iframe(rtw_url, height=900, width=1600)
