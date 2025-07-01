@@ -19,7 +19,7 @@ def rtw_dashboard():
         "them build skills for higher-paying jobs."
     )
 
-    rtw_url = ""https://app.powerbigov.us/view?r=eyJrIjoiYzlkMTYxMTctNTk5My00MWViLThmMWEtZmY2MWUwOTg4ZDk0IiwidCI6IjFhYjAyMTRmLWFjNGEtNDQwNy1hN2M2LTJlZjFlYjc2ZGFjNSJ9
+    rtw_url = "https://app.powerbigov.us/view?r=eyJrIjoiYzlkMTYxMTctNTk5My00MWViLThmMWEtZmY2MWUwOTg4ZDk0IiwidCI6IjFhYjAyMTRmLWFjNGEtNDQwNy1hN2M2LTJlZjFlYjc2ZGFjNSJ9
     st.subheader("Power BI Dashboard")
     components.iframe(rtw_url, height=900, width=1600)
 
