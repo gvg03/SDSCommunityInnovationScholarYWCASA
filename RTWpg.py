@@ -25,5 +25,5 @@ def rtw_dashboard():
 
 
 def rtw_map():
-    st.write("map")
+    st.subheader("Participant Distribution by ZIP Code")
     
