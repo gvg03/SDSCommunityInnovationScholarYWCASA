@@ -80,7 +80,7 @@ elif page == "Map":
     if program == "-- Select a Program --" or program is None:
         st.warning("Please select a program from the sidebar to view the map.")
     else:
-        st.title(f"{program} – ZIP Interactive Map")
+        st.title(f"{program} ")
 
         if program == "HRSA":
             hrsa_map()
