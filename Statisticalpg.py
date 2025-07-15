@@ -14,7 +14,6 @@ def statistical_analysis_page():
     - **Earning a wage of $15/hour or more**
     """)
 
-    
     st.markdown("""
     <span style='font-size: 0.85rem; color: #444;'>In the dashboards, you may see a * next to certain categories. This means the relationship between that demographic and the outcome is statistically significant based on our Chi-Square test.</span>
     """, unsafe_allow_html=True)
@@ -29,15 +28,19 @@ def statistical_analysis_page():
     - If the test shows a **statistically significant** result, it means the connection is unlikely to be due to chance.
     - If it’s **not significant**, we can’t say for sure there’s a strong connection based on the data.
 
-    But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. Even if a result isn't statistically significant, it may still be **practically important** or **highlight areas worth exploring further**.
+    But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. 
     """)
 
     st.markdown("""
-    A **non-significant result** does **not** necessarily mean there is *no relationship* — it may indicate:
+    A **non-significant result** does **not** necessarily mean there is *no relationship* — it may be due to:
       - A small sample size
       - Not enough variation in the data
-      - Or that the relationship just isn't strong enough to be detected statistically
+      - Or simply that the relationship just isn't strong enough to be detected statistically
+      
+      Even without statistical significance, the findings may still be practically important or highlight areas worth exploring further in real-world settings.
     """)
+
+    
 
  
 
