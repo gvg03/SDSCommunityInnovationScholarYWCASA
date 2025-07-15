@@ -43,7 +43,7 @@ if page == "Home":
         
     with col2:
         st.image(
-            "https://drive.google.com/uc?export=view&id=1aRvI5ySMhNHNrozgfIv7vR2E3tgT6A1P",
+            "mylogo.png",
             width=210
         )
 
