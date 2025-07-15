@@ -21,7 +21,7 @@ def statistical_analysis_page():
     st.subheader("How to Interpret the Results")
 
     st.markdown("""
-    The Chi-Square test helps us see if there might be a meaningful connection between two categories — like a participant’s education level and whether they completed the program.
+    The Chi-Square test helps us see if there might be a meaningful connection between two categories — like a participant’s age and whether they completed the program.
 
     - If the test shows a **statistically significant** result, it means the connection is unlikely to be due to chance.
     - If it’s **not significant**, we can’t say for sure there’s a strong connection based on the data.
