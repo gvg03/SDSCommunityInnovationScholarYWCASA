@@ -50,7 +50,7 @@ def statistical_analysis_page():
 
         This threshold is just a common guideline to help decide if a pattern is real or could happen by accident. However, it’s not a hard rule — sometimes meaningful things don’t show up as statistically significant, especially with small datasets.
 
-        So think of statistical tests as one tool to help understand your data — combined with real-world insight and context.
+        Consider statistical tests as one part of the bigger picture, best used alongside practical experience and real-world understanding.
         """)
 
 
