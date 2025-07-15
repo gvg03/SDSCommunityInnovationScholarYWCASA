@@ -8,9 +8,10 @@ import json
 import streamlit.components.v1 as components
 from PIL import Image
 # Imports and Function calls
-from RTWpg import rtw_dashboard, rtw_map
-from RESETpg import reset_dashboard, reset_map
-from HRSApg import hrsa_dashboard, hrsa_map
+from RTWpg import rtw_dashboard
+from RESETpg import reset_dashboard
+from HRSApg import hrsa_dashboard
+from Statisticalpg import statistical_analysis_page
 
 
 # Page configuration 
