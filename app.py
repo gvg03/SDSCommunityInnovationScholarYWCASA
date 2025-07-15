@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 import json
 import streamlit.components.v1 as components
-
+from PIL import Image
 # Imports and Function calls
 from RTWpg import rtw_dashboard, rtw_map
 from RESETpg import reset_dashboard, reset_map
@@ -31,21 +31,19 @@ else:
 
 # HOME  (landing page)
 if page == "Home":
-    # logos side-by-side
     col1, col2 = st.columns([1, 1])
-    
+
     with col1:
         st.image(
             "https://images.squarespace-cdn.com/content/v1/654d110ae6bee3661f065bbd/"
             "a0f0fdba-f230-436e-9386-8ad375390c74/logo-orange_1_.png",
             width=150
         )
-        
+
     with col2:
-        st.image(
-            "mylogo.png",
-            width=210
-        )
+        image = Image.open("mylogo.png")  # use your new filename
+        st.image(image, width=210)
+
 
 
     st.divider()
