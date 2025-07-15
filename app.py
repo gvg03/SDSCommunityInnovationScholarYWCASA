@@ -37,7 +37,7 @@ if page == "Home":
         st.image(
             "https://images.squarespace-cdn.com/content/v1/654d110ae6bee3661f065bbd/"
             "a0f0fdba-f230-436e-9386-8ad375390c74/logo-orange_1_.png",
-            width=160
+            width=210
         )
 
     with col2:
