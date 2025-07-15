@@ -13,7 +13,7 @@ from RTWpg import rtw_dashboard
 from RESETpg import reset_dashboard
 from HRSApg import chw_dashboard
 from Statisticalpg import statistical_analysis_page
-from COpg import def co_page
+from COpg import co_page
 
 # Page configuration 
 st.set_page_config(layout="wide")
