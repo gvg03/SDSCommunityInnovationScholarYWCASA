@@ -16,7 +16,7 @@ def hrsa_dashboard():
         " meh"
     )
     st.markdown("""
-    <span style='font-size: 0.85rem; color: #444;'>\* Indicates a statistically significant relationship based on Chi-Square analysis.</span>
+    <span style='font-size: 0.85rem; color: #444;'>\(*)Indicates a statistically significant relationship based on Chi-Square analysis.</span>
     """, unsafe_allow_html=True)
 
     hrsa_url = ""
