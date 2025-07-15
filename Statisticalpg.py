@@ -30,7 +30,7 @@ def statistical_analysis_page():
     """)
 
     st.markdown("""
-    But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. A **non-significant result** does **not** necessarily mean there is *no relationship* — it may indicate:
+    A **non-significant result** does **not** necessarily mean there is *no relationship* — it may indicate:
       - A small sample size
       - Not enough variation in the data
       - Or that the relationship just isn't strong enough to be detected statistically
