@@ -15,7 +15,7 @@ def hrsa_dashboard():
     st.write(
         " meh"
     )
-    st.caption("*\\* Indicates a statistically significant relationship based on Chi-Square analysis.")
+    st.caption("Indicates a statistically significant relationship based on Chi-Square analysis.")
 
 
     hrsa_url = ""
