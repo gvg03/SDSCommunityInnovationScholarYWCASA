@@ -18,11 +18,12 @@ def rtw_dashboard():
         "them build skills for higher-paying jobs."
     )
 
-    rtw_url = "https://app.powerbigov.us/view?r=eyJrIjoiYzlkMTYxMTctNTk5My00MWViLThmMWEtZmY2MWUwOTg4ZDk0IiwidCI6IjFhYjAyMTRmLWFjNGEtNDQwNy1hN2M2LTJlZjFlYjc2ZGFjNSJ9"
-    st.subheader("Power BI Dashboard")
+    st.markdown("""
+    <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on Chi-Square analysis.</span>
+    """, unsafe_allow_html=True)
+    
+    #power bi link embed 
+    rtw_url = ""
     components.iframe(rtw_url, height=900, width=1600)
 
-
-def rtw_map():
-    st.subheader("Participant Distribution by ZIP Code")
     
