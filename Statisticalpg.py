@@ -14,6 +14,8 @@ def statistical_analysis_page():
     - **Earning a wage of $15/hour or more**
     """)
 
+    st.caption("In the dashboards, you may see a * next to certain categories. This means the relationship between that demographic and the outcome is statistically significant based on our Chi-Square test.")
+
     st.divider()
 
     st.subheader("How to Interpret the Results")
