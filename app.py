@@ -35,7 +35,7 @@ else:
 if page == "Home":
     
     #Header image
-    st.image("header_collage.png", use_container_width=True)
+    st.image("https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/YWCA%20Streamlit%20Mock%20(2).png", use_container_width=True)
     st.markdown("<br>", unsafe_allow_html=True)
 
 
