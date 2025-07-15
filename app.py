@@ -33,7 +33,11 @@ else:
 
 # HOME  (landing page)
 if page == "Home":
-    col1, col2 = st.columns([.2, .2])
+    
+    #Header image
+    st.image("header_collage.png", use_container_width=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+
 
 
     st.divider()
@@ -45,6 +49,11 @@ if page == "Home":
     )
 
     st.divider()
+
+
+    #testing iut video"
+    st.video("")
+
 
 # DASHBOARD
 ###############################################################################
