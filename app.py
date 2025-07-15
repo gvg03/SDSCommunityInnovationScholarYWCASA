@@ -89,13 +89,6 @@ elif page == "Map":
     st.caption("This map illustrates the reach and coverage of workforce programs in the San Antonio area.")
 
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # End
 
