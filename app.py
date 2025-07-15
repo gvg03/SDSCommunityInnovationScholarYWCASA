@@ -41,7 +41,7 @@ if page == "Home":
         )
     with col2:
         st.image(
-            "file:///Users/gabriellagomez/Downloads/Remove%20background%20project%20(1).png",
+            "https://drive.google.com/uc?export=view&id=1aRvI5ySMhNHNrozgfIv7vR2E3tgT6A1P",
             width=210
         )
 
