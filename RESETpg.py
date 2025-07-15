@@ -15,10 +15,11 @@ def reset_dashboard():
     st.write(
         ""
     )
-
+    st.markdown("""
+    <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on Chi-Square analysis.</span>
+    """, unsafe_allow_html=True)
+    
     reset_url = ""
-    st.subheader("Interactive Power BI Dashboard")
     components.iframe(reset_url, height=900, width=1600)
 
-def reset_map():
-    st.subheader("Participant Distribution by ZIP Code")
+
