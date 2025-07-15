@@ -48,7 +48,7 @@ if page == "Home":
              width=210
         )
         
-    col1, col2 = st.columns([0.4, 0.4])
+    col1, col2 = st.columns([0.3, 0.2])
 
     st.divider()
     st.title("YWCA & UTSA SDS Community Innovation Scholars Project")
