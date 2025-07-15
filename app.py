@@ -41,7 +41,7 @@ if page == "Home":
         )
     with col2:
         st.image(
-            "https://sds.utsa.edu//community_scholars/images/cis-for-color-background.png",
+            "file:///Users/gabriellagomez/Downloads/Remove%20background%20project%20(1).png",
             width=210
         )
 
