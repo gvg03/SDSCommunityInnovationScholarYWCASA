@@ -7,6 +7,7 @@ import plotly.express as px
 import json
 import streamlit.components.v1 as components
 from PIL import Image
+
 # Imports and Function calls
 from RTWpg import rtw_dashboard
 from RESETpg import reset_dashboard
@@ -67,7 +68,7 @@ elif page == "Dashboard":
     if program == "-- Select a Program --" or program is None:
         st.warning("Please select a program from the sidebar to view the dashboard.")
     else:
-        st.title(f"{program} Program Overview and {page}")
+        st.title(f"{program}{page}")
 
         # Calling separte dashboard imports from py files
         if program == "CHW":
