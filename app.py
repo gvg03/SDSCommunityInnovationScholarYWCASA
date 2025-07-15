@@ -94,6 +94,10 @@ elif page == "Map":
 
     st.caption("This map illustrates the reach and coverage of workforce programs in the San Antonio area.")
 
+# STATISTICAL ANALYSIS PAGE
+###############################################################################
+elif page == "Statistical Analysis Overview":
+    statistical_analysis_page()
 
 
 # End
