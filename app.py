@@ -33,26 +33,28 @@ else:
 
 # HOME  (landing page)
 if page == "Home":
-    
-    #Header image
-    st.image("https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/YWCA%20Streamlit%20Mock%20(2).png", use_container_width=True)
-    st.markdown("<br>", unsafe_allow_html=True)
 
+    # Header image (collage maybs)
+    st.image(
+        "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/YWCA%20Streamlit%20Mock%20(2).png",
+        use_container_width=True
+    )
 
+    # bit space below the image
+    st.markdown("<br><br>", unsafe_allow_html=True)
 
+    # intro content
     st.divider()
     st.subheader("YWCA & UTSA SDS Community Innovation Scholars Project")
     st.subheader("Welcome!")
+
     st.write(
         "Use the sidebar to explore participant insights across workforce programs. "
-        "View dashboards, learn about co-enrollment, explore our San Antonio community map, and dive into the statistical analysis behind the data. "
+        "View interactive dashboards, learn about co-enrollment across programs, explore the San Antonio community map, and dive into the statistical analysis behind the data."
     )
 
     st.divider()
 
-
-    #testing iut video"
-    st.video("")
 
 
 # DASHBOARD
