@@ -10,9 +10,9 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 def hrsa_dashboard():
-    st.metric("Total Participants", 23)
-    st.metric("Employed Participants", 50)
-    st.subheader("About Ready to Work")
+    st.metric("Total Participants", 214)
+    st.metric("Employed Participants", 43)
+    st.subheader("About HRSA")
     st.write(
         " meh"
     )
