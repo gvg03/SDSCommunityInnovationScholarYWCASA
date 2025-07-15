@@ -19,7 +19,7 @@ from COpg import co_page
 st.set_page_config(layout="wide")
 
 # Sidebar navigation
-st.sidebar.title("Program Explorer")
+st.sidebar.title("Navigation")
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
 
 # Only show program selector when not on Home
