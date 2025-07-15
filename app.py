@@ -75,11 +75,6 @@ elif page == "Dashboard":
 # MAP
 ###############################################################################
 elif page == "Map":
-    st.title("Map")
-
-# MAP
-###############################################################################
-elif page == "Map":
     st.title("San Antonio Community Reach Map")
 
     st.subheader("Interactive Worforce Program Map")
