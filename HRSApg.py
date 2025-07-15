@@ -15,8 +15,9 @@ def hrsa_dashboard():
     st.write(
         " meh"
     )
-    st.caption("Indicates a statistically significant relationship based on Chi-Square analysis.")
-
+    st.markdown("""
+    <span style='font-size: 0.85rem; color: #444;'>*\\* Indicates a statistically significant relationship based on Chi-Square analysis.</span>
+    """, unsafe_allow_html=True)
 
     hrsa_url = ""
     components.iframe(hrsa_url, height=900, width=1600)
