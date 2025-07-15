@@ -16,7 +16,7 @@ def statistical_analysis_page():
 
     
     st.markdown("""
-    <span style='font-size: 0.85rem; color: #444;'>\In the dashboards, you may see a * next to certain categories. This means the relationship between that demographic and the outcome is statistically significant based on our Chi-Square test..</span>
+    <span style='font-size: 0.85rem; color: #444;'>In the dashboards, you may see a * next to certain categories. This means the relationship between that demographic and the outcome is statistically significant based on our Chi-Square test..</span>
     """, unsafe_allow_html=True)
 
     st.divider()
