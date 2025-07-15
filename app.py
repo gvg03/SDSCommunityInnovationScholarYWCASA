@@ -33,17 +33,20 @@ else:
 if page == "Home":
     # logos side-by-side
     col1, col2 = st.columns([1, 1])
+    
     with col1:
         st.image(
             "https://images.squarespace-cdn.com/content/v1/654d110ae6bee3661f065bbd/"
             "a0f0fdba-f230-436e-9386-8ad375390c74/logo-orange_1_.png",
             width=150
         )
+        
     with col2:
         st.image(
             "https://drive.google.com/uc?export=view&id=1aRvI5ySMhNHNrozgfIv7vR2E3tgT6A1P",
             width=210
         )
+
 
     st.divider()
     st.title("YWCA & UTSA SDS Community Innovation Scholars Project")
