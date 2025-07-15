@@ -13,14 +13,14 @@ from RTWpg import rtw_dashboard
 from RESETpg import reset_dashboard
 from HRSApg import chw_dashboard
 from Statisticalpg import statistical_analysis_page
-
+from COpg import def co_page
 
 # Page configuration 
 st.set_page_config(layout="wide")
 
 # Sidebar navigation
 st.sidebar.title("Program Explorer")
-page = st.sidebar.radio("View", ["Home", "Dashboard", "Map", "About Statistical Analysis"])
+page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled" "Map", "About Statistical Analysis"])
 
 # Only show program selector when not on Home
 if page == "Dashboard":
@@ -75,6 +75,11 @@ elif page == "Dashboard":
             reset_dashboard()
         elif program == "RTW":
             rtw_dashboard()
+
+### CO_ENROLLED
+#################################
+elif page == "Co-Enrolled":
+    co_page()
 
 
 # MAP
