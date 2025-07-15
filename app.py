@@ -56,8 +56,8 @@ if page == "Home":
     st.subheader("Welcome!")
     st.write(
         "Please select a workforce program from the sidebar to view participant "
-        "insights, dashboards, and maps. You can explore each program's impact "
-        "and reach in the San Antonio community."
+        "insights, dashboards, and maps. "
+        "reach in the San Antonio community."
     )
     st.divider()
 
