@@ -50,9 +50,8 @@ if page == "Home":
              width=210
         )
 
-
     st.divider()
-    st.title("YWCA & UTSA SDS Community Innovation Scholars Project")
+    st.subheader("YWCA & UTSA SDS Community Innovation Scholars Project")
     st.subheader("Welcome!")
     st.write(
         "Please select a workforce program from the sidebar to view participant "
