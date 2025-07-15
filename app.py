@@ -47,9 +47,8 @@ if page == "Home":
             "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/logo.png",
              width=210
         )
-
-
-
+        
+col1, col2 = st.columns([1, 0.8])
 
     st.divider()
     st.title("YWCA & UTSA SDS Community Innovation Scholars Project")
