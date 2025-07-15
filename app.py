@@ -43,6 +43,13 @@ if page == "Home":
             use_container_width=False
         )
 
+    with col1:
+        st.image(
+            "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/ywcabutton.png",
+            width=180,
+            use_container_width=False
+        )
+
 
     with col2:
         st.image(
