@@ -12,8 +12,9 @@ def statistical_analysis_page():
     - **Program Completion**
     - **Job Placement**
     - **Earning a wage of $15/hour or more**
+    """)
 
-    ---
+    st.divider()
 
     st.subheader("How to Interpret the Results")
 
@@ -24,7 +25,6 @@ def statistical_analysis_page():
     - If it’s **not significant**, we can’t say for sure there’s a strong connection based on the data.
 
     But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. Real-world experiences and program goals matter a lot too!
-
     """)
 
     with st.expander("Want to learn more about how statistical significance works?"):
