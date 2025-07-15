@@ -34,28 +34,7 @@ else:
 # HOME  (landing page)
 if page == "Home":
     col1, col2 = st.columns([.2, .2])
-    
-    with col1:
-        st.image(
-            "https://images.squarespace-cdn.com/content/v1/654d110ae6bee3661f065bbd/"
-            "a0f0fdba-f230-436e-9386-8ad375390c74/logo-orange_1_.png",
-            width=180,
-            use_container_width=False
-        )
 
-    with col1:
-        st.image(
-            "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/ywcabutton.png",
-            width=180,
-            use_container_width=False
-        )
-
-
-    with col2:
-        st.image(
-            "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/logo.png",
-             width=210
-        )
 
     st.divider()
     st.subheader("YWCA & UTSA SDS Community Innovation Scholars Project")
