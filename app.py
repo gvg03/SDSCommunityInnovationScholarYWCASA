@@ -96,7 +96,7 @@ elif page == "Map":
 
 # STATISTICAL ANALYSIS PAGE
 ###############################################################################
-elif page == "Statistical Analysis Overview":
+elif page == "About Statistical Analysis":
     statistical_analysis_page()
 
 
