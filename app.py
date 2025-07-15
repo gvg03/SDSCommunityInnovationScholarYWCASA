@@ -61,10 +61,10 @@ if page == "Home":
     st.subheader("YWCA & UTSA SDS Community Innovation Scholars Project")
     st.subheader("Welcome!")
     st.write(
-        "Please select a workforce program from the sidebar to view participant "
-        "insights, dashboards, and maps. "
-        "Explore the reach in the San Antonio community."
+        "Use the sidebar to explore participant insights across workforce programs. "
+        "View dashboards, learn about co-enrollment, explore our San Antonio community map, and dive into the statistical analysis behind the data. "
     )
+
     st.divider()
 
 # DASHBOARD
