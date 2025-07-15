@@ -21,7 +21,7 @@ st.sidebar.title("Program Explorer")
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Map"])
 
 # Only show program selector when not on Home
-if page != "Home":
+if page == "Dashboard":
     program = st.sidebar.selectbox(
         "Select Program:",
         ["-- Select a Program --", "HRSA", "RESET", "RTW"]
