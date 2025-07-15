@@ -15,9 +15,8 @@ def hrsa_dashboard():
     st.write(
         " meh"
     )
-    st.markdown("""
-    *An asterisk (\\*) next to a demographic group indicates a statistically significant relationship with the selected success metric based on Chi-Square analysis.*
-    """, unsafe_allow_html=True)
+    st.caption("*\\* Indicates a statistically significant relationship based on Chi-Square analysis.")
+
 
     hrsa_url = ""
     st.subheader("Power BI Dashboard")
