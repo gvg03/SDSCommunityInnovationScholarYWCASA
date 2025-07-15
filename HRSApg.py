@@ -18,7 +18,7 @@ def hrsa_dashboard():
 
     hrsa_url = ""
     st.subheader("Power BI Dashboard")
-    components.iframe(rtw_url, height=900, width=1600)
+    components.iframe(hrsa_url, height=900, width=1600)
 
 def hrsa_map():
     st.subheader("Participant Distribution by ZIP Code")
