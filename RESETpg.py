@@ -18,7 +18,7 @@ def reset_dashboard():
 
     reset_url = ""
     st.subheader("Interactive Power BI Dashboard")
-    components.iframe(rtw_url, height=900, width=1600)
+    components.iframe(reset_url, height=900, width=1600)
 
 def reset_map():
     st.subheader("Participant Distribution by ZIP Code")
