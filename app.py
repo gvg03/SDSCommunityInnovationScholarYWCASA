@@ -41,8 +41,11 @@ if page == "Home":
         )
 
     with col2:
-        image = Image.open("mylogo.png")  # use your new filename
-        st.image(image, width=210)
+        st.image(
+            "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/logo.png",
+             width=210
+        )
+
 
 
 
