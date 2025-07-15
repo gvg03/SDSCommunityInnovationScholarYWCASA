@@ -11,7 +11,6 @@ import streamlit.components.v1 as components
 
 def rtw_dashboard():
     st.metric("Total Participants", 401)
-    st.metric("Employed Participants", 105)
     st.subheader("About Ready to Work")
     st.write(
         "Ready to Work is San Antonio’s premier training, education, and "
