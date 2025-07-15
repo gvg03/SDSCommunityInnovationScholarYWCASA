@@ -77,17 +77,21 @@ elif page == "Dashboard":
 elif page == "Map":
     st.title("Map")
 
-    if program == "-- Select a Program --" or program is None:
-        st.warning("Please select a program from the sidebar to view the map.")
-    else:
-        st.title(f"{program} ")
+# MAP
+###############################################################################
+elif page == "Map":
+    st.title("San Antonio Community Reach Map")
 
-        if program == "HRSA":
-            hrsa_map()
-        elif program == "RESET":
-            reset_map()
-        elif program == "RTW":
-            rtw_map()
+    st.subheader("Interactive Worforce Program Map")
+    
+    # Embed your actual map here
+    st.components.v1.iframe(
+        "https://your-map-link.com",  # Replace with your actual map link
+        height=600,
+        width=1000
+    )
+
+    st.caption("This map illustrates the reach and coverage of workforce programs in the San Antonio area.")
 
 
 hide_st_style = """
