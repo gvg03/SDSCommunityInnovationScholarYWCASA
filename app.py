@@ -70,8 +70,8 @@ elif page == "Dashboard":
         st.title(f"{program} Program Overview and {page}")
 
         # Calling separte dashboard imports from py files
-        if program == "HRSA":
-            hrsa_dashboard()
+        if program == "CHW":
+            chw_dashboard()
         elif program == "RESET":
             reset_dashboard()
         elif program == "RTW":
