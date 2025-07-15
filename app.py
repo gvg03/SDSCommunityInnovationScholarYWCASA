@@ -26,7 +26,7 @@ page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled", "Map", "Abo
 if page == "Dashboard":
     program = st.sidebar.selectbox(
         "Select Program:",
-        ["-- Select a Program --", "CHW", "RESET", "RTW"]
+        ["-- Select a Program --", "Community Health Worker", "RESET", "Ready To Work"]
     )
 else:
     program = None  # not needed on Home
@@ -60,11 +60,11 @@ elif page == "Dashboard":
         st.title(f"{program} {page}")
 
         # Calling separate dashboard imports from py files
-        if program == "CHW":
+        if program == "Community Health Worker":
             chw_dashboard()
         elif program == "RESET":
             reset_dashboard()
-        elif program == "RTW":
+        elif program == "Ready To Work":
             rtw_dashboard()
 
 ### CO_ENROLLED
