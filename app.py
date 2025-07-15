@@ -38,7 +38,6 @@ if page == "Home":
             "https://images.squarespace-cdn.com/content/v1/654d110ae6bee3661f065bbd/"
             "a0f0fdba-f230-436e-9386-8ad375390c74/logo-orange_1_.png",
             use_container_width=True
-            width = 150
         )
 
 
