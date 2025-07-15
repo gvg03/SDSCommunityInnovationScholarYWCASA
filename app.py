@@ -68,7 +68,7 @@ elif page == "Dashboard":
     if program == "-- Select a Program --" or program is None:
         st.warning("Please select a program from the sidebar to view the dashboard.")
     else:
-        st.title(f"{program}{page}")
+        st.title(f"{program} {page}")
 
         # Calling separte dashboard imports from py files
         if program == "CHW":
