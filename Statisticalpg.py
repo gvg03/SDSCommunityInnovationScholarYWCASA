@@ -27,6 +27,8 @@ def statistical_analysis_page():
     But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. Real-world experiences and program goals matter a lot too!
     """)
 
+    "In the dashboards, you may see a * next to certain categories. This means the relationship between that demographic and the outcome is statistically significant based on our Chi-Square test."
+
     with st.expander("Want to learn more about how statistical significance works?"):
         st.markdown("""
         In statistics, **'statistically significant'** usually means the result is unlikely to be due to random chance — often if the probability (called the *p-value*) is less than 5% (or 0.05).
