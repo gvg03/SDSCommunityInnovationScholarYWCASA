@@ -33,7 +33,7 @@ else:
 
 # HOME  (landing page)
 if page == "Home":
-    col1, col2 = st.columns([1, 1])
+    col1, col2 = st.columns([.2, .2])
     
     with col1:
         st.image(
@@ -49,8 +49,7 @@ if page == "Home":
             "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/logo.png",
              width=210
         )
-        
-    col1, col2 = st.columns([0.3, 0.2])
+
 
     st.divider()
     st.title("YWCA & UTSA SDS Community Innovation Scholars Project")
