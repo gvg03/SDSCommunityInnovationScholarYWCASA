@@ -57,7 +57,7 @@ if page == "Home":
     st.write(
         "Please select a workforce program from the sidebar to view participant "
         "insights, dashboards, and maps. "
-        "reach in the San Antonio community."
+        "Explore the reach in the San Antonio community."
     )
     st.divider()
 
