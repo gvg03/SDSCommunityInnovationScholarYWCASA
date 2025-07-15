@@ -10,8 +10,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 def reset_dashboard():
-    st.metric("Total Participants", 60)
-    st.metric("Employed Participants", 70)
+    st.metric("Total Participants", 175)
     st.subheader("About Ready to Work")
     st.write(
         ""
