@@ -10,7 +10,7 @@ from PIL import Image
 # Imports and Function calls
 from RTWpg import rtw_dashboard
 from RESETpg import reset_dashboard
-from HRSApg import hrsa_dashboard
+from HRSApg import chw_dashboard
 from Statisticalpg import statistical_analysis_page
 
 
@@ -25,7 +25,7 @@ page = st.sidebar.radio("View", ["Home", "Dashboard", "Map", "About Statistical 
 if page == "Dashboard":
     program = st.sidebar.selectbox(
         "Select Program:",
-        ["-- Select a Program --", "HRSA", "RESET", "RTW"]
+        ["-- Select a Program --", "CHW", "RESET", "RTW"]
     )
 else:
     program = None  # not needed on Home
