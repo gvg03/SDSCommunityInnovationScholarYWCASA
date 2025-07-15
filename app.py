@@ -19,7 +19,7 @@ st.set_page_config(layout="wide")
 
 # Sidebar navigation
 st.sidebar.title("Program Explorer")
-page = st.sidebar.radio("View", ["Home", "Dashboard", "Map", "Statistical Analysis Overview"])
+page = st.sidebar.radio("View", ["Home", "Dashboard", "Map", "About Statistical Analysis"])
 
 # Only show program selector when not on Home
 if page == "Dashboard":
