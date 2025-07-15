@@ -15,18 +15,6 @@ def statistical_analysis_page():
 
     ---
 
-    ### Interpreting the Results:
-    - A **statistically significant result** (typically *p* < 0.05) suggests there is a relationship between the two variables being tested.
-    - A **non-significant result** does **not** necessarily mean there is *no relationship* — it may indicate:
-      - A small sample size
-      - Not enough variation in the data
-      - Or that the relationship just isn't strong enough to be detected statistically
-
-    It's important to consider **both statistical significance and real-world context**. Even if a result isn't statistically significant, it may still be **practically important** or **highlight areas worth exploring further**.
-    """)
-
-    st.divider()
-
     st.subheader("How to Interpret the Results")
 
     st.markdown("""
