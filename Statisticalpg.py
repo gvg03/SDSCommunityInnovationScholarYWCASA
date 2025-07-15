@@ -26,10 +26,17 @@ def statistical_analysis_page():
     - If the test shows a **statistically significant** result, it means the connection is unlikely to be due to chance.
     - If it’s **not significant**, we can’t say for sure there’s a strong connection based on the data.
 
-    But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. Real-world experiences and program goals matter a lot too!
+    But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. Even if a result isn't statistically significant, it may still be **practically important** or **highlight areas worth exploring further**.
     """)
 
-    "In the dashboards, you may see a * next to certain categories. This means the relationship between that demographic and the outcome is statistically significant based on our Chi-Square test."
+    st.markdown("""
+    But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. A **non-significant result** does **not** necessarily mean there is *no relationship* — it may indicate:
+      - A small sample size
+      - Not enough variation in the data
+      - Or that the relationship just isn't strong enough to be detected statistically
+    """)
+
+ 
 
     with st.expander("Want to learn more about how statistical significance works?"):
         st.markdown("""
