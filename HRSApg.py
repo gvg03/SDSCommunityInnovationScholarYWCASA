@@ -19,6 +19,6 @@ def chw_dashboard():
     <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on Chi-Square analysis.</span>
     """, unsafe_allow_html=True)
 
-    hrsa_url = ""
+    hrsa_url = "https://app.powerbi.com/view?r=eyJrIjoiMjRiZTcxMzItYzVmOS00YTNjLWIwMDgtMTkxYjY3ZjlkYzMxIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
     components.iframe(hrsa_url, height=900, width=1600)
 
