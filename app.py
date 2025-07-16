@@ -81,7 +81,18 @@ elif page == "Dashboard":
 ### CO_ENROLLED
 #################################
 elif page == "Co-Enrolled":
-    co_page()
+    st.title("Co-Enrolled Dashboard")
+
+    st.subheader("gsehjgsjdfbsj")
+    
+    # Embed
+    st.components.v1.iframe(
+        "https://app.powerbi.com/view?r=eyJrIjoiOTQ4YjZiNWUtNTlhYi00MjMzLTk2YjUtZTk4ZDBjMzQ4YTBlIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9",  # Replace with your actual map link
+        height=600,
+        width=1000
+    )
+
+    st.caption("This map illustrates the reach and coverage of workforce programs in the San Antonio area.")
 
 
 # MAP
