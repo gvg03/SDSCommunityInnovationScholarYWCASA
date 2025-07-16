@@ -82,8 +82,6 @@ elif page == "Dashboard":
 #################################
 elif page == "Co-Enrolled":
     st.title("Co-Enrolled Dashboard")
-
-    st.subheader("gsehjgsjdfbsj")
     
     # Embed
     st.components.v1.iframe(
