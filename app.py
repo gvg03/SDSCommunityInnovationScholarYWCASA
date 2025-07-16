@@ -81,7 +81,7 @@ elif page == "Dashboard":
 ### CO_ENROLLED
 #################################
 elif page == "Co-Enrolled":
-        co_page()
+    co_page()
 
 
 # MAP
