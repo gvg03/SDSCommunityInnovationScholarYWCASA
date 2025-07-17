@@ -20,6 +20,16 @@ st.set_page_config(layout="wide")
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
+
+# PNG to the sidebar
+st.sidebar.image(
+    "", 
+    use_column_width=True
+)
+
+# Sidebar radio
+page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
+
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
 
 # Only show program selector when not on Home
@@ -36,7 +46,7 @@ if page == "Home":
 
     # Header image (collage maybs)
     st.image(
-        "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/YWCA%20Streamlit%20Mock%20(2).png",
+        "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/Slide%2016_9%20-%201.png",
         use_container_width=True
     )
 
@@ -102,7 +112,7 @@ elif page == "Map":
     
     # Embed your actual map here
     st.components.v1.iframe(
-        "https://app.powerbi.com/view?r=eyJrIjoiYTMyMTQ1NWUtY2ZiYS00ODg1LWFiZDAtYjkwMTFhNTcyNDEzIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9",  # Replace with your actual map link
+        "",  # Replace with your actual map link
         height=600,
         width=1000
     )
