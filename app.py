@@ -49,7 +49,7 @@ if page == "Home":
 
     # Header image (collage maybs)
     st.image(
-        "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/Slide%2016_9%20-%201.png",
+        "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Slide%2016_9%20-%201%20(3).png?raw=true",
         use_container_width=True
     )
 
