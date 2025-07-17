@@ -18,7 +18,7 @@ from COpg import co_page
 # Page configuration 
 st.set_page_config(layout="wide")
 
-#logo
+#logo on sidebar
 st.markdown(
     """
     <div style="text-align: center;">
