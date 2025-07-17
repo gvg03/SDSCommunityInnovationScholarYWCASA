@@ -19,7 +19,7 @@ from COpg import co_page
 st.set_page_config(layout="wide")
 
 #logo on sidebar
-st.markdown(
+st.sidebar.markdown(
     """
     <div style="text-align: center;">
         <img src="https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/ywca_side_header%201.png?raw=true" style="height:60px;">
@@ -27,7 +27,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
