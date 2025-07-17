@@ -23,7 +23,7 @@ def rtw_dashboard():
     """, unsafe_allow_html=True)
     
     #power bi link embed 
-    rtw_url = "https://utsacloud-my.sharepoint.com/:u:/g/personal/gabriella_gomez_my_utsa_edu/EZIyo0Kpq9tKkIw7I59y-NUBQVspdyLQEV1O1uOHtnD0PA?e=VRubfb"
+    rtw_url = "https://app.powerbi.com/view?r=eyJrIjoiNjk1Y2ZlYTctZmIyYy00Y2NhLThiNjQtMmZiYWM0MzU0OWIxIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
     components.iframe(rtw_url, height=900, width=1600)
 
     
