@@ -22,7 +22,7 @@ st.set_page_config(layout="wide")
 st.sidebar.markdown(
     """
     <div style="text-align: center;">
-        <img https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/ywca_side_header%201%20(2).png?raw=true">
+        <imghttps://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/ywca_side_header%201%20(2).png?raw=true">
     </div>
     """,
     unsafe_allow_html=True
