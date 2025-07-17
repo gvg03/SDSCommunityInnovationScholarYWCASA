@@ -21,12 +21,6 @@ st.set_page_config(layout="wide")
 # Sidebar navigation
 st.sidebar.title("Navigation")
 
-# PNG to the sidebar
-st.sidebar.image(
-    "", 
-    use_column_width=True
-)
-
 # Sidebar radio
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
 
