@@ -103,7 +103,6 @@ elif page == "Co-Enrolled":
         width=1000
     )
 
-    st.caption("This map illustrates the reach and coverage of workforce programs in the San Antonio area.")
 
 
 # MAP
