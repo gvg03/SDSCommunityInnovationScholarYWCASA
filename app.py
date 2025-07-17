@@ -18,8 +18,20 @@ from COpg import co_page
 # Page configuration 
 st.set_page_config(layout="wide")
 
+#logo
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/ywca_side_header%201.png?raw=true" style="height:60px;">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Sidebar navigation
 st.sidebar.title("Navigation")
+
 
 # Sidebar radio
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
