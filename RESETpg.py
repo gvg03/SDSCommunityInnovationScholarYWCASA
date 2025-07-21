@@ -20,6 +20,6 @@ def reset_dashboard():
     """, unsafe_allow_html=True)
     
     reset_url = "https://app.powerbi.com/view?r=eyJrIjoiZWM2ODNlZTgtZmE2OC00Yjg1LTg4ZGYtMzE4ZTBkMWYyMzNjIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
-    components.iframe(reset_url, height=900, width=1600)
+    components.iframe(reset_url, height=600, width=373.5)
 
 
