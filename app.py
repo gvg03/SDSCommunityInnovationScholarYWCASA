@@ -109,9 +109,7 @@ elif page == "Co-Enrolled":
 # MAP
 ###############################################################################
 elif page == "Map":
-    st.title("San Antonio Community Reach Map")
-
-    st.subheader("Interactive Worforce Program Map")
+    st.title("YWCA Workforce Programs Reach Map")
     
     # Embed your actual map here
     st.components.v1.iframe(
