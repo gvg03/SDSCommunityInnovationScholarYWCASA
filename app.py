@@ -110,8 +110,7 @@ elif page == "Co-Enrolled":
 ###############################################################################
 elif page == "Map":
     st.title("YWCA Workforce Programs Reach Map")
-
-    st.title(" ")
+    st.write(" ")
     # Embed your actual map here
     st.components.v1.iframe(
         "https://app.powerbi.com/view?r=eyJrIjoiYTMyMTQ1NWUtY2ZiYS00ODg1LWFiZDAtYjkwMTFhNTcyNDEzIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9",  # Replace with your actual map link
