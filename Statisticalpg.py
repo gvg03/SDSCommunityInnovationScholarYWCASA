@@ -6,7 +6,7 @@ def statistical_analysis_page():
     st.subheader("What is Chi-Squared?")
     
     st.markdown("""
-    The **Chi-Square Test** is used to determine whether there is a **statistically significant association** between two categorical variables.
+    The **Chi-Square Test of Independence** is used to determine whether there is a **statistically significant association** between two categorical variables.
 
     In this project, we use the Chi-Square test to explore whether **demographic factors** — such as **Age, Race, Ethnicity, Gender, Highest Education Level, or Employment Status at Intake** — are associated with program success outcomes like:
     - **Program Completion**
@@ -15,7 +15,7 @@ def statistical_analysis_page():
     """)
 
     st.markdown("""
-    <span style='font-size: 0.85rem; color: #444;'>In the dashboards, you may see a * next to certain categories. This means the relationship between that demographic and the outcome is statistically significant based on our Chi-Square test.</span>
+    <span style='font-size: 0.85rem; color: #444;'>In the dashboards, you may see an asterisk (*) next to certain categories. This means the relationship between that demographic and the outcome is statistically significant based on our Chi-Square test. In other words, there is a association between the demographic factor and the success outcome.</span>
     """, unsafe_allow_html=True)
 
     st.divider()
@@ -26,7 +26,7 @@ def statistical_analysis_page():
     The Chi-Square test helps us see if there might be a meaningful connection between two categories — like a participant’s age and whether they completed the program.
 
     - If the test shows a **statistically significant** result, it means the connection is unlikely to be due to chance.
-    - If it’s **not significant**, we can’t say for sure there’s a strong connection based on the data.
+    - If the test is **not significant**, we can’t say for sure there’s a strong connection based on the data.
 
     But remember, just because something isn’t statistically significant doesn’t mean it’s unimportant. 
     """)
@@ -34,8 +34,8 @@ def statistical_analysis_page():
     st.markdown("""
     A **non-significant result** does **not** necessarily mean there is *no relationship* — it may be due to:
       - A small sample size
-      - Not enough variation in the data
-      - Or simply that the relationship just isn't strong enough to be detected statistically
+      - Weak of subtle association between categorical variables
+      - Not enough data to meet all requirements of the test
       
       Even without statistical significance, the findings may still be practically important or highlight areas worth exploring further in real-world settings.
     """)
