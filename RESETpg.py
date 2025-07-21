@@ -19,7 +19,7 @@ def reset_dashboard():
     <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on Chi-Square analysis.</span>
     """, unsafe_allow_html=True)
     
-    reset_url = "https://app.powerbi.com/view?r=eyJrIjoiZWM2ODNlZTgtZmE2OC00Yjg1LTg4ZGYtMzE4ZTBkMWYyMzNjIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
-    components.iframe(reset_url, height=600, width=373.5)
+    reset_url = "https://app.powerbi.com/view?r=eyJrIjoiMWI3NTFjNjMtNDY3Zi00Mzk1LWFkMWMtMGRmNDVkODM5M2VhIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9" 
+    components.iframe(reset_url, height=612, width=1024)
 
 
