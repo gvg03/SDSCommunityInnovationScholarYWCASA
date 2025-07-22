@@ -66,7 +66,7 @@ if page == "Home":
     with col1:
         st.subheader("HEB Community Innovation Scholars Program with YWCA")
 
-    st.write("Created by Avery Tovar, Gabriella Gomez and Kayla Duran")
+    st.write("Created by Avery Tovar, Gabriella Gomez, and Kayla Duran")
 
     with col2:
         st.image(
