@@ -61,7 +61,7 @@ if page == "Home":
     st.divider()
 
     #columns for the subheader and logo side-by-side
-    col1, col2 = st.columns([5, 1])
+    col1, col2 = st.columns([2, 1])
 
     with col1:
         st.subheader("HEB Community Innovation Scholars Program with YWCA")
