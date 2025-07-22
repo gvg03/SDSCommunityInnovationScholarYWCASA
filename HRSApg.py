@@ -13,7 +13,7 @@ def chw_dashboard():
     st.metric("Total Participants", 214)
     st.subheader("About CHW")
     st.write(
-        " meh"
+        "The program is geared toward young women ages 18 and over and partners with accredited colleges for educational training."
     )
     st.markdown("""
     <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on Chi-Square analysis.</span>
