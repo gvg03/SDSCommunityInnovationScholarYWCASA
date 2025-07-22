@@ -59,7 +59,7 @@ if page == "Home":
 
     # intro content
     st.divider()
-    st.subheader("HEB Community Innovation Scholards Program with YWCA")
+    st.subheader("HEB Community Innovation Scholars Program with YWCA")
     st.subheader("Welcome!")
 
     st.write(
