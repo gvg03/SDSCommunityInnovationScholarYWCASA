@@ -62,11 +62,11 @@ if page == "Home":
     col1, col2 = st.columns([1.50, 1])
 
     with col1:
-    st.markdown(
-        """
-        <h3>
-            <a href="https://provost.utsa.edu/ai-cyber-computing/" style="text-decoration:none; color:black;">
-                HEB Community Innovation Scholars Program with YWCA
+        st.markdown(
+            """
+            <h3>
+                <a href="https://provost.utsa.edu/ai-cyber-computing/" style="text-decoration:none; color:black;">
+                    HEB Community Innovation Scholars Program with YWCA
             </a>
         </h3>
         """,
