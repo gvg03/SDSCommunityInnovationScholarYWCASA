@@ -54,8 +54,6 @@ if page == "Home":
         use_container_width=True
     )
 
-    # bit space below the image
-    st.markdown("<br><br>", unsafe_allow_html=True)
 
     # intro content
     st.divider()
