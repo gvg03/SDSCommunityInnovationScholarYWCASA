@@ -48,7 +48,7 @@ else:
 # HOME  (landing page)
 if page == "Home":
 
-    # Header image (collage maybs)
+    # Header image (collage maybe)
     st.image(
         "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Slide%2016_9%20-%201%20(3).png?raw=true",
         use_container_width=True
@@ -64,13 +64,13 @@ if page == "Home":
     col1, col2 = st.columns([4, 1])
 
     with col1:
-    st.subheader("HEB Community Innovation Scholars Program with YWCA")
+        st.subheader("HEB Community Innovation Scholars Program with YWCA")
 
     with col2:
-    st.image(
-        "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/CIS%20%26%20United%20Way%20Logos%20(Updated).png",
-        width=80
-    )
+        st.image(
+            "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/CIS%20%26%20United%20Way%20Logos%20(Updated).png",
+            width=80
+        )
 
     st.subheader("Welcome!")
 
