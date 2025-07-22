@@ -68,7 +68,7 @@ if page == "Home":
 
     with col2:
         st.image(
-            "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/CIS%20%26%20United%20Way%20Logos%20(Updated).png",
+            "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/Large_CIS_UW_Combined_logo%201.png?raw=true",
             width=80
         )
 
