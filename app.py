@@ -69,7 +69,7 @@ if page == "Home":
     with col2:
         st.image(
             "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Large_CIS_UW_Combined_logo%201.png?raw=true",
-            width=300
+            width=400
         )
 
     st.subheader("Welcome!")
