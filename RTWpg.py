@@ -23,7 +23,7 @@ def rtw_dashboard():
     """, unsafe_allow_html=True)
     
     #power bi link embed 
-    rtw_url = "https://app.powerbi.com/view?r=eyJrIjoiNTExZmE5N2MtMWNiZS00OTZhLTgxMmEtYmZjZTgxYWFhNjk4IiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
+    rtw_url = "<iframe title="ReadyToWorkYWCA&UTSASDSCIS" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTExZmE5N2MtMWNiZS00OTZhLTgxMmEtYmZjZTgxYWFhNjk4IiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>"
     components.iframe(rtw_url, height=900, width=1600)
 
     
