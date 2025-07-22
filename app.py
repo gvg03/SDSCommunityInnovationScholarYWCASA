@@ -62,11 +62,10 @@ if page == "Home":
     col1, col2 = st.columns([1.50, 1])
 
     with col1:
-    st.markdown(
-        '### [HEB Community Innovation Scholars Program with YWCA](https://provost.utsa.edu/ai-cyber-computing/)',
-        unsafe_allow_html=True
+        st.markdown(
+            '### [HEB Community Innovation Scholars Program with YWCA](https://provost.utsa.edu/ai-cyber-computing/)',
+            unsafe_allow_html=True
     )
-
 
     st.write("Created by Avery Tovar, Gabriella Gomez, and Kayla Duran")
 
