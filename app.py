@@ -60,8 +60,8 @@ if page == "Home":
     # intro content
     st.divider()
 
-    # Create columns for the subheader and logo side-by-side
-    col1, col2 = st.columns([4, 1])
+    #columns for the subheader and logo side-by-side
+    col1, col2 = st.columns([5, 1])
 
     with col1:
         st.subheader("HEB Community Innovation Scholars Program with YWCA")
