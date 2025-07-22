@@ -62,12 +62,18 @@ if page == "Home":
     col1, col2 = st.columns([1.50, 1])
 
     with col1:
-        st.markdown(
-            '### [HEB Community Innovation Scholars Program with YWCA](https://provost.utsa.edu/ai-cyber-computing/)',
-            unsafe_allow_html=True
+    st.markdown(
+        """
+        <h3>
+            <a href="https://provost.utsa.edu/ai-cyber-computing/" style="text-decoration:none; color:black;">
+                HEB Community Innovation Scholars Program with YWCA
+            </a>
+        </h3>
+        """,
+        unsafe_allow_html=True
     )
-
     st.write("Created by Avery Tovar, Gabriella Gomez, and Kayla Duran")
+
 
     with col2:
         st.image(
