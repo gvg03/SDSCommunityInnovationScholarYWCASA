@@ -23,7 +23,7 @@ def rtw_dashboard():
     """, unsafe_allow_html=True)
     
     #power bi link embed 
-    rtw_url = "https://app.powerbi.com/view?r=eyJrIjoiNjk1Y2ZlYTctZmIyYy00Y2NhLThiNjQtMmZiYWM0MzU0OWIxIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
+    rtw_url = "https://app.powerbi.com/view?r=eyJrIjoiNTExZmE5N2MtMWNiZS00OTZhLTgxMmEtYmZjZTgxYWFhNjk4IiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
     components.iframe(rtw_url, height=900, width=1600)
 
     
