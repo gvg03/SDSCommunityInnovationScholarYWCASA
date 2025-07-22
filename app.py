@@ -60,6 +60,12 @@ if page == "Home":
     # intro content
     st.divider()
     st.subheader("HEB Community Innovation Scholars Program with YWCA")
+    
+    with col2:
+    st.image(
+        "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/CIS%20%26%20United%20Way%20Logos%20(Updated).png",  # replace with your actual logo URL
+        width=80  # adjust size as needed
+    )
     st.subheader("Welcome!")
 
     st.write(
