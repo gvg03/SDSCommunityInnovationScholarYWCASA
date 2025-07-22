@@ -66,6 +66,8 @@ if page == "Home":
     with col1:
         st.subheader("HEB Community Innovation Scholars Program with YWCA")
 
+    st.write("Created by Avery Tovar, Gabriella Gomez and Kayla Duran")
+
     with col2:
         st.image(
             "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Large_CIS_UW_Combined_logo%201.png?raw=true",
