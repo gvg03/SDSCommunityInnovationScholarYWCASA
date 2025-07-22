@@ -59,13 +59,20 @@ if page == "Home":
 
     # intro content
     st.divider()
+
+    # Create columns for the subheader and logo side-by-side
+    col1, col2 = st.columns([4, 1])
+
+    with col1:
     st.subheader("HEB Community Innovation Scholars Program with YWCA")
-    
+
     with col2:
     st.image(
-        "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/CIS%20%26%20United%20Way%20Logos%20(Updated).png",  # replace with your actual logo URL
-        width=80  # adjust size as needed
+        "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/CIS%20%26%20United%20Way%20Logos%20(Updated).png",
+        width=80
     )
+
+st.subheader("Welcome!")
     st.subheader("Welcome!")
 
     st.write(
