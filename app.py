@@ -72,7 +72,6 @@ if page == "Home":
         width=80
     )
 
-st.subheader("Welcome!")
     st.subheader("Welcome!")
 
     st.write(
