@@ -28,7 +28,10 @@ if st.sidebar.checkbox("About Statistical Analysis"):
     page = "About Statistical Analysis"
 
 #logo on sidebar
-# Logo on sidebar
+# Add a big spacer
+st.sidebar.markdown("<br><br><br><br><br><br><br><br>", unsafe_allow_html=True)
+
+# Then logo at "bottom"
 st.sidebar.markdown(
     """
     <div style="text-align: center;">
