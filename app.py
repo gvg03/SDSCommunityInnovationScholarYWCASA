@@ -32,7 +32,6 @@ st.sidebar.markdown(
 # Sidebar navigation
 st.sidebar.title("")
 
-
 # Sidebar radio
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
 
