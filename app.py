@@ -29,10 +29,14 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
+st.sidebar.markdown("### Explore")
+page = st.sidebar.radio("Navigate to:", ["Home", "Dashboard", "Co-Enrolled", "Map"])
 
-# Sidebar radio
-st.sidebar.write("")
-page = st.sidebar.radio("Navigate to:", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
+st.sidebar.markdown("---")
+st.sidebar.markdown("### Learn More")
+if st.sidebar.checkbox("About Statistical Analysis"):
+    page = "About Statistical Analysis"
+
 
 # Only show program selector when not on Home
 if page == "Dashboard":
