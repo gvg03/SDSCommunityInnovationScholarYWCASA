@@ -29,6 +29,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
+st.sidebar.header("Explore")
 page = st.sidebar.radio("Navigate to:", ["Home", "Dashboard", "Co-Enrolled", "Map"])
 
 st.sidebar.markdown("---")
