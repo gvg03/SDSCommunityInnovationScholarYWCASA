@@ -28,10 +28,15 @@ if st.sidebar.checkbox("About Statistical Analysis"):
     page = "About Statistical Analysis"
 
 #logo on sidebar
-# Add a big spacer
-st.sidebar.markdown("<br><br><br><br><br><br><br><br>br>br>br>br>br>br>br>br>", unsafe_allow_html=True)
+# Spacer to push logo down
+st.sidebar.markdown(
+    """
+    <div style="height: 150px;"></div>
+    """,
+    unsafe_allow_html=True
+)
 
-# Then logo at "bottom"
+# Logo at the bottom
 st.sidebar.markdown(
     """
     <div style="text-align: center;">
@@ -40,7 +45,6 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True
 )
-
 
 # Only show program selector when not on Home
 if page == "Program Dashboards":
