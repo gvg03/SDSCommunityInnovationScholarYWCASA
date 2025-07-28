@@ -74,8 +74,6 @@ if page == "Home":
         """,
         unsafe_allow_html=True
     )
-    st.write("Created by Avery Tovar, Gabriella Gomez, and Kayla Duran")
-
 
     with col2:
         st.image(
@@ -91,6 +89,11 @@ if page == "Home":
     )
 
     st.divider()
+
+    st.markdown(
+    "<p style='font-size: 0.9rem;'>Created by Avery Tovar, Gabriella Gomez, and Kayla Duran</p>",
+    unsafe_allow_html=True
+    )
 
 
 
