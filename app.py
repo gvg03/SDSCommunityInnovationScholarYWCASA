@@ -88,8 +88,8 @@ if page == "Home":
         "View interactive dashboards, learn about co-enrollment across programs, explore the San Antonio community map, and dive into the statistical analysis behind the data."
     )
 
-    st.divider()
-
+    st.markdown("---") 
+    
     st.markdown(
     "<p style='font-size: 0.9rem;'>Created by Avery Tovar, Gabriella Gomez, and Kayla Duran</p>",
     unsafe_allow_html=True
