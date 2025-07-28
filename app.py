@@ -29,8 +29,11 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.header("Navigation")
-page = st.sidebar.radio("Select a Page:", ["Home", "Program Dashboards", "Co-Enrolled Dashboard", "Map"])
+st.sidebar.markdown("### Navigation: Select a Page")
+page = st.sidebar.radio(
+    "",
+    ["Home", "Program Dashboards", "Co-Enrolled Dashboard", "Map"]
+)
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### Learn More")
