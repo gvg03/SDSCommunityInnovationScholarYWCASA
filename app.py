@@ -31,7 +31,7 @@ if st.sidebar.checkbox("About Statistical Analysis"):
 # Spacer to push logo down
 st.sidebar.markdown(
     """
-    <div style="height: 305px;"></div>
+    <div style="height: 290px;"></div>
     """,
     unsafe_allow_html=True
 )
