@@ -29,8 +29,6 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-# Sidebar navigation
-st.sidebar.title("")
 
 # Sidebar radio
 page = st.sidebar.radio("View", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
