@@ -29,8 +29,8 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.markdown("### Explore")
-page = st.sidebar.radio("Navigate to:", ["Home", "Dashboard", "Co-Enrolled", "Map"])
+st.sidebar.markdown("### Navigate to:")
+page = st.sidebar.radio("["Home", "Dashboard", "Co-Enrolled", "Map"])
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### Learn More")
