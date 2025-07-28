@@ -30,7 +30,7 @@ st.sidebar.markdown(
 )
 
 st.sidebar.header("Navigation")
-page = st.sidebar.radio("Select a Page:", ["Home", "Dashboard", "Co-Enrolled", "Map"])
+page = st.sidebar.radio("Select a Page:", ["Home", "Program Dashboards", "Co-Enrolled Dashboard", "Map"])
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### Learn More")
@@ -39,7 +39,7 @@ if st.sidebar.checkbox("About Statistical Analysis"):
 
 
 # Only show program selector when not on Home
-if page == "Dashboard":
+if page == "Program Dashboards":
     program = st.sidebar.selectbox(
         "Select Program:",
         ["-- Select a Program --", "Community Health Worker", "RESET", "Ready To Work"]
@@ -101,7 +101,7 @@ if page == "Home":
 ###############################################################################
 # DASHBOARD
 ###############################################################################
-elif page == "Dashboard":
+elif page == "Program Dashboards":
     if program == "-- Select a Program --" or program is None:
         st.warning("Please select a program from the sidebar to view the dashboard.")
         st.markdown("""
@@ -120,7 +120,7 @@ elif page == "Dashboard":
 
 ### CO_ENROLLED
 #################################
-elif page == "Co-Enrolled":
+elif page == "Co-Enrolled Dashboard":
     st.title("Co-Enrolled Dashboard")
     
     # Embed
