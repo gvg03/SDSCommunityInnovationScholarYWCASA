@@ -32,7 +32,7 @@ st.sidebar.markdown(
 st.sidebar.header("Navigation")
 page = st.sidebar.radio("Select a Page:", ["Home", "Program Dashboards", "Co-Enrolled Dashboard", "Map"])
 
-st.sidebar.markdown("---")
+st.sidebar.markdown("--")
 st.sidebar.markdown("### Learn More")
 if st.sidebar.checkbox("About Statistical Analysis"):
     page = "About Statistical Analysis"
