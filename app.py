@@ -27,6 +27,17 @@ st.sidebar.markdown("### Learn More")
 if st.sidebar.checkbox("About Statistical Analysis"):
     page = "About Statistical Analysis"
 
+#logo on sidebar
+# Logo on sidebar
+st.sidebar.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/ywca_side_header%201%20(2).png?raw=true" width="200">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # Only show program selector when not on Home
 if page == "Program Dashboards":
