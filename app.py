@@ -40,7 +40,7 @@ st.sidebar.markdown(
 st.sidebar.markdown(
     """
     <div style="text-align: center;">
-        <img src="https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/ywca_side_header%201%20(2).png?raw=true" width="200">
+        <img src="https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/ywca_side_header_1_2.png" width="200">
     </div>
     """,
     unsafe_allow_html=True
