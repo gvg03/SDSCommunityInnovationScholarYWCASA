@@ -31,7 +31,6 @@ st.sidebar.markdown(
 
 st.sidebar.markdown("### Navigation: Select a Page")
 page = st.sidebar.radio(
-    "",
     ["Home", "Program Dashboards", "Co-Enrolled Dashboard", "Map"]
 )
 
