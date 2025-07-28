@@ -30,7 +30,7 @@ st.sidebar.markdown(
 )
 
 st.sidebar.markdown("### Navigate to:")
-page = st.sidebar.radio("["Home", "Dashboard", "Co-Enrolled", "Map"])
+page = st.sidebar.radio(["Home", "Dashboard", "Co-Enrolled", "Map"])
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### Learn More")
