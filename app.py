@@ -29,7 +29,7 @@ if st.sidebar.checkbox("About Statistical Analysis"):
 
 #logo on sidebar
 # Add a big spacer
-st.sidebar.markdown("<br><br><br><br><br><br><br><br>br>br>br>br>br>", unsafe_allow_html=True)
+st.sidebar.markdown("<br><br><br><br><br><br><br><br>br>br>br>br>br>br>br>br>", unsafe_allow_html=True)
 
 # Then logo at "bottom"
 st.sidebar.markdown(
