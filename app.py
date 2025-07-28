@@ -30,7 +30,7 @@ st.sidebar.markdown(
 )
 
 # Sidebar navigation
-st.sidebar.title("Navigation")
+
 
 
 # Sidebar radio
