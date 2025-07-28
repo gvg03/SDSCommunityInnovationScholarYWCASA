@@ -50,7 +50,7 @@ if page == "Home":
 
     # Header image (collage maybe)
     st.image(
-        "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Slide%2016_9%20-%201%20(5).png?raw=true",
+        "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Slide%2016_9%20-%201%20(6).png?raw=true",
         use_container_width=True
     )
 
