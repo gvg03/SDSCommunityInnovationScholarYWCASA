@@ -32,7 +32,7 @@ st.sidebar.markdown(
 
 # Sidebar radio
 st.sidebar.write("")
-page = st.sidebar.radio("Navigate to", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
+page = st.sidebar.radio("Navigate to:", ["Home", "Dashboard", "Co-Enrolled", "Map", "About Statistical Analysis"])
 
 # Only show program selector when not on Home
 if page == "Dashboard":
