@@ -57,12 +57,11 @@ else:
 
 # HOME  (landing page)
 if page == "Home":
-
- st.image(
+    # Header image
+    st.image(
         "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/logo_pop%20(1).png",
         use_container_width=True
     )
-
     # intro content
     st.divider()
 
