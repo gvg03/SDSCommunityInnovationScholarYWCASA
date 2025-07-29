@@ -16,7 +16,7 @@ def chw_dashboard():
         "The program is geared toward young women ages 18 and over and partners with accredited colleges for educational training."
     )
     st.markdown("""
-    <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on Chi-Square analysis.</span>
+    <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on the Chi-Square Test of Independence Analysis.</span>
     """, unsafe_allow_html=True)
 
     hrsa_url = "https://app.powerbi.com/view?r=eyJrIjoiMjRiZTcxMzItYzVmOS00YTNjLWIwMDgtMTkxYjY3ZjlkYzMxIiwidCI6IjNhMjI4ZGZiLWM2NDctNDRjYi04ODM1LTdiMjA2MTdmYzkwNiIsImMiOjN9"
