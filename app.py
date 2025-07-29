@@ -61,7 +61,7 @@ st.sidebar.markdown(
 if page == "Home":
     # Header image
     st.image(
-        "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/logo_pop%20(1).png?raw=true",
+        "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/logo_popnewFINAL%20(1).png?raw=true",
         use_container_width=True
     )
     # intro content
