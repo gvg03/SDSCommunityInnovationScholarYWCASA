@@ -112,7 +112,7 @@ elif page == "Program Dashboards":
     if program == "-- Select a Program --" or program is None:
         st.warning("Please select a program from the sidebar to view the dashboard.")
         st.markdown("""
-        <p style='font-size: 0.85rem; color: #444;'> Note: (*) Indicates a statistically significant relationship based on the Chi-Square Test of Independence</p>
+        <p style='font-size: 0.85rem; color: #444;'> Note: (*) Indicates a statistically significant relationship based on the Chi-Square Test of Independence.</p>
         """, unsafe_allow_html=True)
     else:
         st.title(f"{program} {page}")
