@@ -58,11 +58,27 @@ else:
 # HOME  (landing page)
 if page == "Home":
 
-    # Header image (collage maybe)
-    st.image(
-        "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Slide%2016_9%20-%201%20(6).png?raw=true",
-        use_container_width=True
-    )
+
+# Track click state in session
+    if "header_clicked" not in st.session_state:
+        st.session_state.header_clicked = False
+
+# Handle click logic
+    clicked = st.button("", key="header_toggle")
+
+    if clicked:
+        st.session_state.header_clicked = not st.session_state.header_clicked
+
+# Image URLs
+    blurred_header_url = "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/logo_pop%20(1).png"
+    clear_collage_url = "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/clearheader.png"        # full clear collage only
+
+# Show correct image
+    if st.session_state.header_clicked:
+        st.image(clear_collage_url, use_column_width=True)
+    else:
+        st.image(blurred_header_url, use_column_width=True)
+
 
 
     # intro content
