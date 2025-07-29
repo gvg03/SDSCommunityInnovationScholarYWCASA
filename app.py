@@ -74,10 +74,12 @@ if page == "Home":
     clear_collage_url = "https://raw.githubusercontent.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/clearheader.png"        # full clear collage only
 
 # Show correct image
+    # Show correct image
     if st.session_state.header_clicked:
-        st.image(clear_collage_url, use_container_width=True)
+        st.image(clear_collage_url, width=800, caption="Click to zoom")
     else:
-        st.image(blurred_header_url, use_container_width=True)
+        st.image(blurred_header_url, width=800, caption="Click to zoom")
+
 
 
 
