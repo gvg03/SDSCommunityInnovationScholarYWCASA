@@ -75,9 +75,9 @@ if page == "Home":
 
 # Show correct image
     if st.session_state.header_clicked:
-        st.image(clear_collage_url, use_column_width=True)
+        st.image(clear_collage_url, use_container_width=True)
     else:
-        st.image(blurred_header_url, use_column_width=True)
+        st.image(blurred_header_url, use_container_width=True)
 
 
 
