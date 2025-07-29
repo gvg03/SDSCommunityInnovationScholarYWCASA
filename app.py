@@ -70,8 +70,8 @@ if page == "Home":
         st.session_state.header_clicked = not st.session_state.header_clicked
 
 # Image URLs
-    blurred_header_url = "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/logo_pop%20(1).png"
-    clear_collage_url = "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/clearheader.png"        # full clear collage only
+    blurred_header_url = "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/logo_pop%20(1).png"
+    clear_collage_url = "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/main/clearheader.png"        # full clear collage only
 
 # Show correct image
     if st.session_state.header_clicked:
