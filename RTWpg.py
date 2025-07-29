@@ -19,7 +19,7 @@ def rtw_dashboard():
     )
 
     st.markdown("""
-    <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on the Chi-Square Test of Independence</span>
+    <span style='font-size: 0.85rem; color: #444;'>\(*) Indicates a statistically significant relationship based on the Chi-Square Test of Independence Analysis.</span>
     """, unsafe_allow_html=True)
     
     #power bi link embed 
