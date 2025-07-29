@@ -22,6 +22,15 @@ st.set_page_config(layout="wide")
 st.sidebar.header("Navigation")
 page = st.sidebar.radio("Select a Page:", ["Home", "Program Dashboards", "Co-Enrolled Dashboard", "Map"])
 
+# Only show program selector when not on Home
+if page == "Program Dashboards":
+    program = st.sidebar.selectbox(
+        "Select Program:",
+        ["-- Select a Program --", "Community Health Worker", "RESET", "Ready To Work"]
+    )
+else:
+    program = None  
+
 st.sidebar.markdown("---")
 st.sidebar.markdown("### Learn More")
 if st.sidebar.checkbox("About Statistical Analysis"):
@@ -46,14 +55,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-# Only show program selector when not on Home
-if page == "Program Dashboards":
-    program = st.sidebar.selectbox(
-        "Select Program:",
-        ["-- Select a Program --", "Community Health Worker", "RESET", "Ready To Work"]
-    )
-else:
-    program = None  # not needed on Home
+
 
 # HOME  (landing page)
 if page == "Home":
