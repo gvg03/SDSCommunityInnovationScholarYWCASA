@@ -71,21 +71,16 @@ if page == "Home":
     col1, col2 = st.columns([1.50, 1])
 
     with col1:
-        st.markdown(
-            """
-            <h3>
-                <a href="https://provost.utsa.edu/ai-cyber-computing/" style="text-decoration:none; color:black;">
-                    HEB Community Innovation Scholars Program with YWCA
-            </a>
-        </h3>
-        """,
-        unsafe_allow_html=True
-    )
+        st.subheader("HEB Community Innovation Scholars Program with YWCA")
 
     with col2:
-        st.image(
-            "https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Large_CIS_UW_Combined_logo%201.png?raw=true",
-            width=400
+        st.markdown(
+            """
+            <a href="https://provost.utsa.edu/ai-cyber-computing/" target="_blank">
+            <img src="https://github.com/gvg03/SDSCommunityInnovationScholarYWCASA/blob/main/Large_CIS_UW_Combined_logo%201.png?raw=true" width="400">
+            </a>
+            """,
+            unsafe_allow_html=True
         )
 
     st.subheader("Welcome!")
